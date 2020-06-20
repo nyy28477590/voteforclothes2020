@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+    <head>
+        <meta name="description" content="投出你最愛的造型">
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>商務謝師夜-造型票選投票網頁</title>
+
+        <style type="text/css">
+            *{
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                font-family: "Helvetica", "Arial","LiHei Pro","黑體-繁","微軟正黑體", sans-serif;
+            }
+            html, body
+            {
+                height: 100%;
+                background-color: aqua;
+            }
+            .banner
+            {
+                width: 100%;
+                height: 30%;
+            }
+            .banner h1
+            {
+                font-size: 80px;
+                font-weight: bolder;
+                font-stretch: normal;
+                line-height: 1.4;
+                letter-spacing: normal;
+                text-align: center;
+                padding-top: 40px;
+            }
+            .banner h2
+            {
+                font-size: 60px;
+                font-weight: bold;
+                font-stretch: normal;
+                line-height: 1.4;
+                letter-spacing: normal;
+                text-align: center;
+                padding-top: 20px;
+            }
+            .banner p
+            {
+                font-size: 40px;
+                font-stretch: normal;
+                line-height: 1.4;
+                letter-spacing: normal;
+                text-align: center;
+                padding-top: 20px;
+            }
+            .full
+            {
+                width: 80%;
+                height: 40%;
+                border-radius: 10px;
+                box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+                background-color: #ffffff;
+                margin: 20px 10% 0 10%;
+                padding: 10px;
+                text-align: center;
+            }
+            .full .card
+            {
+                text-align: left;
+                display: flex;
+                background-color: #ffffff;
+            }
+            .full .card .voteName
+            {
+                width: 200px;
+                height: 250px;
+                font-size: 50px;
+                line-height: 1.3;
+                padding: 0 5px 20px 0;
+                color: #000000;
+                vertical-align: middle;
+                display: flex;
+                flex-direction: column;
+                background-color: #ffffff;
+            }
+            .full .card .voteName label
+            {
+                display: block;
+                padding: 25px;
+                font-size: 50px;
+                font-weight: bold;
+                line-height: 1.3;
+                text-align: center;
+                color: #000000;
+                background-color: #ffffff;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+            .form
+            {
+                padding: 10px 5px 50px 0;
+                background-color: #ffffff;
+            }
+            .full .card .form input, select
+            {
+                width: 120%;
+                height: 80px;
+                display: block;
+                border-radius: 10px;
+                margin-top: 34px;
+                margin-bottom: 75px;
+                background-color: #ffffff;
+                font-size: 50px;
+            }
+            .full .card .form input, select option
+            {
+                font-size: 20px;
+            }
+            button
+            {
+                font-size: 50px;
+                height: 100px;
+                width: 110%;
+                text-align: center;
+                margin-top: 20px;
+            }
+        </style>
+
+
+    </head>
+
+    <body>
+        <header>
+            <div class="banner">
+                <h1>商務謝師夜 投票網站</h1>
+                <h2>選出你最愛的造型！</h2>
+                <p>第一名票 5分</p>
+                <p>第二名票 3分</p>
+                <p>第三名票 1分</p>
+            </div>
+        </header>
+        <div class="full">
+            <div class="card">
+                <div class="voteName">
+                    <label for="number1">第一名</label>
+                    <label for="number2">第二名</label>
+                    <label for="number3">第三名</label>
+                </div>
+                <div class="from">
+                    <select id="number1">
+                        <option value="10634005 陳彥伶">10634005 陳彥伶</option>
+                        <option value="10734001 劉冠妤">10734001 劉冠妤</option>
+                        <option value="10734002 吳心慈">10734002 吳心慈</option>
+                        <option value="10734003 江庭儀">10734003 江庭儀</option>
+                        <option value="10734004 鄭郁璇">10734004 鄭郁璇</option>
+                        <option value="10734005 黃佳瑋">10734005 黃佳瑋</option>
+                        <option value="10734006 張元斳">10734006 張元斳</option>
+                        <option value="10734007 賴郁婷">10734007 賴郁婷</option>
+                        <option value="10734008 曾文儀">10734008 曾文儀</option>
+                        <option value="10734010 李湘薇">10734010 李湘薇</option>
+                        <option value="10734011 張書淳">10734011 張書淳</option>
+                        <option value="10734012 陳欣昀">10734012 陳欣昀</option>
+                        <option value="10734013 俞含靜">10734013 俞含靜</option>
+                        <option value="10734015 沈維宣">10734015 沈維宣</option>
+                        <option value="10734017 李奕萱">10734017 李奕萱</option>
+                        <option value="10734018 文原睿">10734018 文原睿</option>
+                        <option value="10734019 邱子庭">10734019 邱子庭</option>
+                        <option value="10734020 李東昇">10734020 李東昇</option>
+                        <option value="10734021 陳忻雲">10734021 陳忻雲</option>
+                        <option value="10734022 劉安欣">10734022 劉安欣</option>
+                        <option value="10734023 張庭芸">10734023 張庭芸</option>
+                        <option value="10734024 許文德">10734024 許文德</option>
+                        <option value="10734025 謝可依">10734025 謝可依</option>
+                        <option value="10734026 吳沛芯">10734026 吳沛芯</option>
+                        <option value="10734028 張耀昀">10734028 張耀昀</option>
+                        <option value="10734029 許芸瑄">10734029 許芸瑄</option>
+                        <option value="10734030 張雅晴">10734030 張雅晴</option>
+                        <option value="10734031 蔡淯婷">10734031 蔡淯婷</option>
+                        <option value="10734032 陳婕安">10734032 陳婕安</option>
+                        <option value="10734033 王新瑋">10734033 王新瑋</option>
+                        <option value="10734034 梅家瑜">10734034 梅家瑜</option>
+                    </select>
+                    <select id="number2">
+                        <option value="10634005 陳彥伶">10634005 陳彥伶</option>
+                        <option value="10734001 劉冠妤">10734001 劉冠妤</option>
+                        <option value="10734002 吳心慈">10734002 吳心慈</option>
+                        <option value="10734003 江庭儀">10734003 江庭儀</option>
+                        <option value="10734004 鄭郁璇">10734004 鄭郁璇</option>
+                        <option value="10734005 黃佳瑋">10734005 黃佳瑋</option>
+                        <option value="10734006 張元斳">10734006 張元斳</option>
+                        <option value="10734007 賴郁婷">10734007 賴郁婷</option>
+                        <option value="10734008 曾文儀">10734008 曾文儀</option>
+                        <option value="10734010 李湘薇">10734010 李湘薇</option>
+                        <option value="10734011 張書淳">10734011 張書淳</option>
+                        <option value="10734012 陳欣昀">10734012 陳欣昀</option>
+                        <option value="10734013 俞含靜">10734013 俞含靜</option>
+                        <option value="10734015 沈維宣">10734015 沈維宣</option>
+                        <option value="10734017 李奕萱">10734017 李奕萱</option>
+                        <option value="10734018 文原睿">10734018 文原睿</option>
+                        <option value="10734019 邱子庭">10734019 邱子庭</option>
+                        <option value="10734020 李東昇">10734020 李東昇</option>
+                        <option value="10734021 陳忻雲">10734021 陳忻雲</option>
+                        <option value="10734022 劉安欣">10734022 劉安欣</option>
+                        <option value="10734023 張庭芸">10734023 張庭芸</option>
+                        <option value="10734024 許文德">10734024 許文德</option>
+                        <option value="10734025 謝可依">10734025 謝可依</option>
+                        <option value="10734026 吳沛芯">10734026 吳沛芯</option>
+                        <option value="10734028 張耀昀">10734028 張耀昀</option>
+                        <option value="10734029 許芸瑄">10734029 許芸瑄</option>
+                        <option value="10734030 張雅晴">10734030 張雅晴</option>
+                        <option value="10734031 蔡淯婷">10734031 蔡淯婷</option>
+                        <option value="10734032 陳婕安">10734032 陳婕安</option>
+                        <option value="10734033 王新瑋">10734033 王新瑋</option>
+                        <option value="10734034 梅家瑜">10734034 梅家瑜</option>
+                    </select>
+                    <select id="number3">
+                        <option value="10634005 陳彥伶">10634005 陳彥伶</option>
+                        <option value="10734001 劉冠妤">10734001 劉冠妤</option>
+                        <option value="10734002 吳心慈">10734002 吳心慈</option>
+                        <option value="10734003 江庭儀">10734003 江庭儀</option>
+                        <option value="10734004 鄭郁璇">10734004 鄭郁璇</option>
+                        <option value="10734005 黃佳瑋">10734005 黃佳瑋</option>
+                        <option value="10734006 張元斳">10734006 張元斳</option>
+                        <option value="10734007 賴郁婷">10734007 賴郁婷</option>
+                        <option value="10734008 曾文儀">10734008 曾文儀</option>
+                        <option value="10734010 李湘薇">10734010 李湘薇</option>
+                        <option value="10734011 張書淳">10734011 張書淳</option>
+                        <option value="10734012 陳欣昀">10734012 陳欣昀</option>
+                        <option value="10734013 俞含靜">10734013 俞含靜</option>
+                        <option value="10734015 沈維宣">10734015 沈維宣</option>
+                        <option value="10734017 李奕萱">10734017 李奕萱</option>
+                        <option value="10734018 文原睿">10734018 文原睿</option>
+                        <option value="10734019 邱子庭">10734019 邱子庭</option>
+                        <option value="10734020 李東昇">10734020 李東昇</option>
+                        <option value="10734021 陳忻雲">10734021 陳忻雲</option>
+                        <option value="10734022 劉安欣">10734022 劉安欣</option>
+                        <option value="10734023 張庭芸">10734023 張庭芸</option>
+                        <option value="10734024 許文德">10734024 許文德</option>
+                        <option value="10734025 謝可依">10734025 謝可依</option>
+                        <option value="10734026 吳沛芯">10734026 吳沛芯</option>
+                        <option value="10734028 張耀昀">10734028 張耀昀</option>
+                        <option value="10734029 許芸瑄">10734029 許芸瑄</option>
+                        <option value="10734030 張雅晴">10734030 張雅晴</option>
+                        <option value="10734031 蔡淯婷">10734031 蔡淯婷</option>
+                        <option value="10734032 陳婕安">10734032 陳婕安</option>
+                        <option value="10734033 王新瑋">10734033 王新瑋</option>
+                        <option value="10734034 梅家瑜">10734034 梅家瑜</option>
+                    </select>
+                    <button class="btnVote" id="btnVote">投票</button>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script>
+            $(function() {
+                $('#btnVote').on('click', function() {
+                    var no1 = $('#number1').val() || '未選取';
+
+                    var no2 = $('#number2').val() || '未選取';
+
+                    var no3 = $('#number3').val() || '未選取';
+
+                    var data = {
+                        'entry.1054161825': no1,
+                        'entry.1572650529': no2,
+                        'entry.2068736141': no3
+                    };
+                    $.ajax({
+                        type: 'POST',
+                        url: 'https://docs.google.com/forms/u/0/d/e/1FAIpQLScH5c0ZAf7BkMmtxjA7nBsTi7Qh1DT_mZYoEHKoCoS0a-0GEw/formResponse',
+                        data: data,
+                        contentType: 'application/json',
+                        dataType: 'jsonp',
+                        complete: function() {
+                            alert('選票已送出!');
+                        }
+                    });
+                });
+            });
+        </script>
+        
+
+
+    </body>
+</html>
